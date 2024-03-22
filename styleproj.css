@@ -1,0 +1,48 @@
+body {
+	background-image: url("bgimage.jpg");
+	background-repeat: no-repeat;
+	background-size: 65%;
+	background-position: right;
+    background-attachment: fixed;
+}
+
+h3 {
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color: #101709;
+	font-family: Perpetua;
+	text-align: center;
+	padding: 10px 15px;
+	width: 27%;
+	opacity: 0.75;
+	border-radius: 30px;
+	color: white;
+}
+
+a {
+	font-size: 20px;	
+	color: white;
+	text-decoration: none;
+    background-color: rgb(66, 56, 56);
+	padding: 10px 15px;
+	margin-bottom:10px;
+	border-radius: 30px;
+	display: auto;
+    text-align: center;
+}
+
+ul li a {
+	font-family: Perpetua;
+	text-decoration: none;
+	padding: 10px 15px;
+	margin-bottom:10px;
+	border-radius: 30px;
+	display: auto;
+}
+
+ul li {
+	margin-top: 55px;
+	margin-bottom:55px;
+}
+
+

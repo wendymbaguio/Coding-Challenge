@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Challenge 5</title>
+    <style>
+        body {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modified FLAMES</h1>
+
+    <label for="name1">Enter Name 1:</label>
+    <input type="text" id="name1"><br>
+    <label for="name2">Enter Name 2:</label>
+    <input type="text" id="name2"><br>
+    <button onclick="flames()">Match Names</button><br>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function flames() {
+            var name1 = document.getElementById("name1").value.trim().toUpperCase();
+            var name2 = document.getElementById("name2").value.trim().toUpperCase();
+            var totalCharacters = name1.length + name2.length;
+            var flamesCharacters = "FLAMES";
+            var flamesIndex = totalCharacters % flamesCharacters.length;
+            var flamesResult = "";
+
+            switch (flamesCharacters[flamesIndex]) {
+                case 'F':
+                    flamesResult = "Friends";
+                    break;
+                case 'L':
+                    flamesResult = "Lovers";
+                    break;
+                case 'A':
+                    flamesResult = "Acquaintances";
+                    break;
+                case 'M':
+                    flamesResult = "Marriage";
+                    break;
+                case 'E':
+                    flamesResult = "Enemies";
+                    break;
+                case 'S':
+                    flamesResult = "Sweethearts";
+                    break;
+                default:
+                    flamesResult = "Error";
+            }
+
+            document.getElementById("result").innerText = "Result: " + flamesResult;
+        }
+    </script>
+</body>
+</html>
